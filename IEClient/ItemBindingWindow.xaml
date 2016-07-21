@@ -13,7 +13,7 @@
     
     <Window.Resources>
         <DataTemplate x:Key="deviceList">
-            <Border Width="Auto" Height="Auto" BorderBrush="BlueViolet" BorderThickness="3" Margin="5">
+            <Border Width="Auto" Height="Auto" BorderBrush="Gray" BorderThickness="3" Margin="5" CornerRadius="50">
                 <StackPanel Orientation="Vertical" VerticalAlignment="Center">
                 <TextBlock Text="{Binding Path=Station}" Margin="5" FontWeight="Bold" HorizontalAlignment="Center" FontSize="20"/>
                     <TextBlock Text="{Binding Path=Device}" Margin="5" FontWeight="Bold" HorizontalAlignment="Center" FontSize="15"/>
@@ -30,24 +30,24 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <UniformGrid Columns="3" Grid.Row="0">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Right" TextWrapping="Wrap" Text="项目名称 ：" VerticalAlignment="Center" FontSize="19" Margin="5" Grid.Row="0"/>
-            <Label x:Name="label" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" Grid.Row="0"/>
-        <Button x:Name="save" Content="  保          存   " HorizontalAlignment="Left" Margin="0,5" FontSize="15" Cursor="Hand" Background="Gray"/>
+        <UniformGrid Columns="3" Grid.Row="0" HorizontalAlignment="Center">
+        <TextBlock x:Name="textBlock"  TextWrapping="Wrap" Text="项目名称 ：" FontSize="19" Margin="5" Grid.Row="0"/>
+        <Label x:Name="label" Content="项目" FontSize="18" Grid.Row="0"/>
+      
         </UniformGrid>
 
         <GridSplitter  Height="2" Background="Gray" HorizontalAlignment="Stretch" VerticalAlignment="Top" Grid.Row="1"/>
 
         <ListBox Name="UniformGrid" Grid.Row="2" Margin="7,3,7,10" ItemTemplate="{StaticResource deviceList}" 
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-                 ScrollViewer.VerticalScrollBarVisibility="Visible"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
                  ItemsSource="{Binding}"
                  Background="Transparent"
                  SelectionChanged="binding_Click"
                  >
             <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
-                    <UniformGrid Columns="6"></UniformGrid>
+                    <UniformGrid Columns="7"></UniformGrid>
                 </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
         </ListBox>

@@ -19,6 +19,7 @@ namespace IEClient
     /// </summary>
     public partial class BindingWindow : Window
     {
+        public static string device;
         public BindingWindow()
         {
             InitializeComponent();
@@ -50,6 +51,8 @@ namespace IEClient
         }
         private void save_Click(object sender, RoutedEventArgs e)
         {
+
+            device = deviceID.Text;
             this.Close();
         }
     }

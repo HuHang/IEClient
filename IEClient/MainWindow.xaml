@@ -25,7 +25,7 @@
                 <DropShadowEffect Color="Black" Direction="110" ShadowDepth="3" Opacity="1" />
             </TextBlock.Effect>
         </TextBlock>
-        
+
         <TextBox x:Name="email" HorizontalAlignment="Center" Height="23" Margin="0,135,0,0" TextWrapping="Wrap" Text="邮箱" VerticalAlignment="Top" Width="200"/>
         <TextBox x:Name="password" HorizontalAlignment="Center" Height="23" Margin="0,175,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Width="200"/>
         <Button x:Name="login" Content="登       录" 

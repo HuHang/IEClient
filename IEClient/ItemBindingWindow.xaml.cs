@@ -47,7 +47,7 @@ namespace IEClient
         {
             List<Student> students = new List<Student>
             {
-                new Student { Station="工位一", Device="设备一"},
+                new Student { Station=BindingWindow.device, Device="设备一"},
                 new Student { Station="工位二", Device="设备二"},
                 new Student { Station="工位三", Device="设备三"},
                 new Student { Station="工位四", Device="设备四"},
@@ -153,9 +153,8 @@ namespace IEClient
 
         }
         
-        private void leftButtonClick(object sender, RoutedEventArgs e)
+        private void save_test(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("123");
         }
     }
 }
