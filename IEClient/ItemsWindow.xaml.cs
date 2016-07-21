@@ -58,10 +58,9 @@ namespace IEClient
             //win.Content = new ResPage();
             ItemsWindow win = new ItemsWindow();
             win.Content = new CheckPage();
-            win.Title = "设备检测";
-            
-            this.Close();
+            win.Title = "设备检测";                      
             win.Show();
+            this.Close();
         }
         private void to_ItemBinding_Click(object sender, RoutedEventArgs e)
         {
