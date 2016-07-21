@@ -147,28 +147,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="login.jpg" />
+    <Resource Include="image\login.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="index.png" />
+    <Resource Include="image\index.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="login1.jpg" />
+    <Resource Include="image\login1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="binding.jpg" />
+    <Resource Include="image\binding.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="check.png" />
+    <Resource Include="image\check.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="set.png" />
+    <Resource Include="image\set.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="item.png" />
+    <Resource Include="image\item.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.png" />
+    <Resource Include="image\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

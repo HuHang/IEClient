@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="项目详情" MinWidth="400" MinHeight="300">
     <Window.Background>
-        <ImageBrush ImageSource="binding.jpg"/>
+        <ImageBrush ImageSource="image/binding.jpg"/>
     </Window.Background>
     
     <Window.Resources>
