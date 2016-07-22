@@ -26,8 +26,49 @@
             </TextBlock.Effect>
         </TextBlock>
 
-        <TextBox x:Name="email" HorizontalAlignment="Center" Height="23" Margin="0,135,0,0" TextWrapping="Wrap" Text="邮箱" VerticalAlignment="Top" Width="200"/>
-        <TextBox x:Name="password" HorizontalAlignment="Center" Height="23" Margin="0,175,0,0" TextWrapping="Wrap" Text="密码" VerticalAlignment="Top" Width="200"/>
+        <TextBox FontSize="17" Width="200" Height="Auto" Margin="0,135,0,0" Name="email"  HorizontalAlignment="Center"  VerticalAlignment="Top" Foreground="Indigo" TabIndex="0" BorderThickness="1">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="1" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock FontStyle="Normal" Text="邮箱" Foreground="Black"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+
+        <TextBox FontSize="17"   Width="200" Height="Auto" Margin="0,175,0,0" Name="password"  HorizontalAlignment="Center"  TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Indigo" TabIndex="0" BorderThickness="1">
+            <TextBox.Resources>
+                <VisualBrush x:Key="HelpBrush" TileMode="None" Opacity="1" Stretch="None" AlignmentX="Left">
+                    <VisualBrush.Visual>
+                        <TextBlock FontStyle="Normal" Text="密码"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </TextBox.Resources>
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Style.Triggers>
+                        <Trigger Property="Text" Value="{x:Null}">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                        <Trigger Property="Text" Value="">
+                            <Setter Property="Background" Value="{StaticResource HelpBrush}"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
         <Button x:Name="login" Content="登       录" 
                 HorizontalAlignment="Center" 
                 Margin="0,220,0,0" 

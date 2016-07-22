@@ -51,5 +51,9 @@ namespace IEClient
                 DragMove();
             }
         }
+        private void mouseenter(object enter, RoutedEventArgs e)
+        {
+            MessageBox.Show(email.Text);
+        }
     }
 }
